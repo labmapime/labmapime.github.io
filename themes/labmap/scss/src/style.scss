@@ -8,16 +8,12 @@ body {
   font-family: "Liberation Sans", Arial, sans-serif;
   line-height: 1.75em;
 
-  max-width: 70em;
+  max-width: 50em;
   margin: auto;
   padding: 1em 4%;
 
   color: $fg-main-color;
   background: $bg-main-color;
-}
-
-@media screen and (min-width: 50em) {
-  body { padding: 5em 2%; }
 }
 
 /* Basic elements. */
@@ -37,8 +33,6 @@ h4 { font-size:  .83em; margin: 1.67em 0;}
 h5 { font-size:  .67em; margin: 2.33em 0;}
 h6 { font-size:  .51em; margin: 2.33em 0;}
 
-/* Footer. */
-
 nav#site-nav a:visited,
 nav#site-nav a  {
   color: $fg-footer-anchor-normal-color;
@@ -48,27 +42,52 @@ nav#site-nav a:hover  {
   color: $nav-hover-fg-color;
   text-decoration: none;
 }
+nav#site-nav a.dummy {
+  display: none;
+}
 
 nav#site-nav {
   display: grid;
-  grid-template-columns: repeat(15, auto);
+  grid-template-columns: repeat(5, auto);
   text-align: center;
   box-sizing: border-box;
-  padding: 0 2em 1em;
+  padding: 0 0 1em;
   border-bottom: 0.1em solid $border-color;
-  margin-bottom: 4em;
+  margin-bottom: 1em;
 }
 
 footer {
   box-sizing: border-box;
-  padding: 0 2em 0;
-  margin-top: 4em;
+  padding: 0;
+  margin-top: 2em;
 }
 
 figure img {
   max-width: 100%;
   max-height: 100%;
 }
+
+/* in case we're on desktop... */
+
+@media screen and (min-width: 50em) {
+  body {
+    padding: 5em 2%;
+    max-width: 70em;
+  }
+  nav#site-nav a.dummy {
+    display: initial;
+  }
+  nav#site-nav {
+    grid-template-columns: repeat(15, auto);
+    padding: 0 2em 1em;
+    margin-bottom: 4em;
+  }
+  footer {
+    padding: 0 2em 0;
+    margin-top: 4em;
+  }
+}
+
 
 /* Personalized elements. */
 
@@ -115,11 +134,11 @@ blockquote {
 
 /* table style */
 
-/* in case legacy stuff is being a bitch */
+/* in case legacy stuff is being bothersome */
 table, table * { font-size: inherit; }
 
 table {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   border-collapse: collapse;
 }
@@ -133,6 +152,10 @@ th, td {
 }
 
 th { text-align: center; }
+
+@media screen and (min-width: 50em) {
+  table { width: 90%; }
+}
 
 /* Usually code */
 
