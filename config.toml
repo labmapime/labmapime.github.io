@@ -1,0 +1,7 @@
+baseURL = "https://labmap.ime.usp.br/"
+languageCode = "pt-br"
+title = "Laboratório de Matemática Aplicada - IME-USP"
+theme = "labmap"
+
+[markup.goldmark.renderer]
+unsafe = true

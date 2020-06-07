@@ -1,0 +1,25 @@
+// Colorscheme variables.
+
+$fg-main-color: #ffffff;
+$bg-main-color: #4d545c;
+
+$fg-timestamp-color: #707880;
+$fg-quote-color: #888888;
+
+$fg-codeblock-color: $fg-main-color;
+$bg-codeblock-color: #272822;
+$fg-codeblock-url-color: #f92672;
+$fg-codeinline-color: $fg-codeblock-color;
+$bg-codeinline-color: $bg-codeblock-color;
+// $bg-codeinline-color: #323232;
+
+$fg-anchor-normal-color: #cccccc;
+$fg-anchor-hover-color: $fg-main-color;
+
+$fg-footer-anchor-normal-color: $fg-main-color;
+$fg-footer-anchor-hover-color: $fg-anchor-hover-color;
+
+$nav-hover-fg-color: $fg-anchor-hover-color;
+
+$border-color: #c5c8c6;
+$secondary-border-color: #656565;

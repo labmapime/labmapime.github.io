@@ -1,0 +1,156 @@
+// Colorscheme.
+@import "scheme";
+@import "highlight";
+
+/* body(lewd). */
+
+body {
+  font-family: "Liberation Sans", Arial, sans-serif;
+  line-height: 1.75em;
+
+  max-width: 70em;
+  margin: auto;
+  padding: 1em 4%;
+
+  color: $fg-main-color;
+  background: $bg-main-color;
+}
+
+@media screen and (min-width: 50em) {
+  body { padding: 5em 2%; }
+}
+
+/* Basic elements. */
+
+a             { text-decoration: underline; }
+a, a:visited  { color: $fg-anchor-normal-color; }
+a:hover       { color: $fg-anchor-hover-color; text-decoration: none; }
+
+li            { margin: 0.1em 0; }
+
+/* decrease HTML headers font size one step */
+
+h1 { font-size:  1.5em; margin: 0.83em 0;}
+h2 { font-size: 1.23em; margin:    1em 0;}
+h3 { font-size:    1em; margin: 1.33em 0;}
+h4 { font-size:  .83em; margin: 1.67em 0;}
+h5 { font-size:  .67em; margin: 2.33em 0;}
+h6 { font-size:  .51em; margin: 2.33em 0;}
+
+/* Footer. */
+
+nav#site-nav a:visited,
+nav#site-nav a  {
+  color: $fg-footer-anchor-normal-color;
+  text-decoration: none;
+}
+nav#site-nav a:hover  {
+  color: $nav-hover-fg-color;
+  text-decoration: none;
+}
+
+nav#site-nav {
+  display: grid;
+  grid-template-columns: repeat(15, auto);
+  text-align: center;
+  box-sizing: border-box;
+  padding: 0 2em 1em;
+  border-bottom: 0.1em solid $border-color;
+  margin-bottom: 4em;
+}
+
+footer {
+  box-sizing: border-box;
+  padding: 0 2em 0;
+  margin-top: 4em;
+}
+
+/* Personalized elements. */
+
+img.centered {
+  display: block;
+  margin: 0 auto;
+}
+
+video.fit, img.fit {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+img.bordered {
+  border: 2px solid $secondary-border-color;
+  margin: 1em 0;
+}
+
+img.centered.bordered {
+  margin: 1em auto;
+}
+
+video.bordered {
+  border: 2px solid $secondary-border-color;
+}
+
+/* blockquotes */
+blockquote {
+  color: $fg-quote-color;
+  font-style: normal;
+  margin: 0;
+  padding: 0 40px;
+  box-sizing: border-box;
+  border-left: .2em solid $border-color;
+}
+
+/* table style */
+
+/* in case legacy stuff is being a bitch */
+table, table * { font-size: inherit; }
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid $border-color;
+}
+
+th, td {
+  padding: 0.2em 0.4em;
+}
+
+th { text-align: center; }
+
+/* Usually code */
+
+code {
+  font-family: "DejaVu Sans Mono", monospace;
+  font-size: 90%;
+  font-style: normal;
+  background: $bg-codeinline-color;
+  color: $fg-codeinline-color;
+  padding: 0.08em 0.4em;
+  border-radius: 0.3em;
+}
+
+pre code {
+  display: block;
+  max-height: 40em;
+  padding: 1em;
+  overflow: scroll;
+  line-height: 1.35em;
+  background: $bg-codeblock-color;
+  scrollbar-width: none;
+}
+
+pre code::-webkit-scrollbar {
+  display: none;
+}
+
+pre {
+  border-radius: 0.7em;
+}
+
+a code {
+  color: $fg-codeblock-url-color;
+}

@@ -1,0 +1,10 @@
+name = "LabMAP"
+description = "Tema padrão do site do Laboratório de Matemática Aplicada."
+homepage = "https://labmap.ime.usp.br/"
+tags = []
+features = []
+min_version = "0.41.0"
+
+[author]
+  name = "Wilson M. S. Moncayo"
+  homepage = "https://spoonm.org/"

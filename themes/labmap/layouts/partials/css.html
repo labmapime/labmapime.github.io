@@ -1,0 +1,7 @@
+{{ if isset .Params "stylesheets" }}
+	{{ range .Params.stylesheets }}
+<link rel="stylesheet" href="/css/{{.}}.css">
+	{{ end }}
+{{ else }}
+<link rel="stylesheet" href="/css/style.css">
+{{ end }}

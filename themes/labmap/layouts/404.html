@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		{{ partial "head.html" (dict "Title" "404") }}
+		{{ partial "mincss.html" . }}
+	</head>
+	<body>
+		{{ partial "navbar.html" }}
+
+		<header>
+			{{ partial "header.html" (dict "Title" "404") }}
+		</header>
+
+		<p>Infelizmente esta página não existe ou está inacessível.</p>
+
+		<p>
+			Se você chegou a esta página a partir de um link neste site, favor
+			entrar em contato com o administrador do laboratório através do
+			e-mail
+				<a href="mailto:labmap@usp.br?Subject=404" target="_top">
+					labmap@usp.br
+				</a>
+			com detalhes de como chegou até aqui.
+		</p>
+	</body>
+</html>
