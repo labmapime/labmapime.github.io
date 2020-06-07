@@ -42,12 +42,12 @@ Administração: [Wilson Marco Sales Moncayo (IME-USP)](mailto:labmap@usp.br)
 
 {{< figure
   src="/img/labmap-lab.jpg"
-  class="hpImg"
-  caption="*LabMAP*"
+  class="hp-img"
+  caption="Laboratório"
 >}}
 
 {{< figure
   src="/img/labmap-servnum.jpg"
-  class="hpImg"
+  class="hp-img"
   caption="Servidores Numéricos"
 >}}
