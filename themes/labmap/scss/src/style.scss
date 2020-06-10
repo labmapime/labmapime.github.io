@@ -10,10 +10,16 @@ body {
 
   max-width: 50em;
   margin: auto;
-  padding: 1em 4%;
+  padding: 0;
 
   color: $fg-main-color;
   background: $bg-main-color;
+}
+
+main {
+  max-width: 50em;
+  margin: auto;
+  padding: 0 4%;
 }
 
 /* Basic elements. */
@@ -40,7 +46,7 @@ nav#site-nav a  {
 }
 nav#site-nav a:hover  {
   color: $nav-hover-fg-color;
-  text-decoration: none;
+  text-decoration: underline;
 }
 nav#site-nav a.dummy {
   display: none;
@@ -50,16 +56,24 @@ nav#site-nav {
   display: grid;
   grid-template-columns: repeat(5, auto);
   text-align: center;
-  box-sizing: border-box;
-  padding: 0 0 1em;
-  border-bottom: 0.1em solid $border-color;
   margin-bottom: 1em;
+  border-bottom: 0.3em solid $nav-border-color;
 }
 
+nav#site-nav,
 footer {
+  background-color: $nav-bg-color;
   box-sizing: border-box;
-  padding: 0;
-  margin-top: 2em;
+  padding: 1em 0;
+}
+
+footer p {
+  margin: 0;
+}
+footer {
+  margin-top: 1em;
+  border-top: 0.3em solid $nav-border-color;
+  padding: 1em 4%;
 }
 
 figure img {
@@ -79,12 +93,13 @@ figure img {
   }
   nav#site-nav {
     grid-template-columns: repeat(15, auto);
-    padding: 0 2em 1em;
+    padding: 1em 2em;
     margin-bottom: 4em;
   }
+  main { padding: initial; }
   footer {
-    padding: 0 2em 0;
-    margin-top: 4em;
+    padding: 1em 2em;
+    margin-top: 3em;
   }
 }
 
