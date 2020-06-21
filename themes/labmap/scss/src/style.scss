@@ -95,11 +95,13 @@ figure img {
     grid-template-columns: repeat(15, auto);
     padding: 1em 2em;
     margin-bottom: 4em;
+    border: 0.3em solid $nav-border-color;
   }
   main { padding: initial; }
   footer {
     padding: 1em 2em;
     margin-top: 3em;
+    border: 0.3em solid $nav-border-color;
   }
 }
 
