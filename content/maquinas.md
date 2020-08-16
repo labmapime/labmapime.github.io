@@ -30,7 +30,7 @@ São eles:
 | Máquina      | Processador                                   | Memória | Disco    |
 | -----------  | -------------------------------------------   | ------: | -------: |
 | `cfd01`      | **4x** AMD Opteron 6376 (16c) 2.3 GHz         | 256 GB  | 3 TB     |
-| `guepardo00` | **2x** Intel Xeon X5690 (6c/12t) 3.47 GHz     | 64 GB   | 500 GB   |
+| `guepardo00` | **2x** Intel Xeon X5690 (6c/12t) 3.47 GHz     | 64 GB   | 3.5 TB   |
 | `guepardo01` | **2x** Intel Xeon X5690 (6c/12t) 3.47 GHz     | 64 GB   | 1 + 2 TB |
 | `ybytu`      | **2x** Intel Xeon Gold 6144 (8c/16t) 3.50 GHz | 540 GB  | 4 TB     |
 
