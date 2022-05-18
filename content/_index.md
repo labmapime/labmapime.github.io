@@ -1,6 +1,6 @@
 ---
 title: "Laboratório de Matemática Aplicada"
-date: 2020-05-05T22:49:11-03:00
+date: 2022-05-18
 draft: false
 
 stylesheets: ["style"]
@@ -31,14 +31,11 @@ remoto é prestado através do e-mail [labmap@usp.br](mailto:labmap@usp.br).
 
 Horário de atendimento presencial:
 
-- Segundas-feiras, das 13:00 às 15:00.
-- Quintas-feiras, das 13:00 às 15:00.
-
-*No momento, atividades presenciais estão suspensas no IME-USP. Os horários
-acima estão passíveis de mudança assim que retornarmos à normalidade.*
+- Terças-feiras, das 10:00 às 12:00.
+- Quartas-feiras, das 13:30 às 15:30.
 
 Coordenação: [Prof. Pedro Peixoto (MAP-IME-USP)](mailto:pedrosp@ime.usp.br)\
-Administração: [Wilson Marco Sales Moncayo (IME-USP)](mailto:labmap@usp.br)
+Administração: [Luciano Rodrigues Saraiva Leão (IME-USP)](mailto:labmap@usp.br)
 
 {{< figure
   src="/img/labmap-lab.jpg"
