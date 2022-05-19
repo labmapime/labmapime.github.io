@@ -23,6 +23,9 @@ jobs:
 
       - name: Generate static pages
         run: hugo --minify
+      
+      - name: Copy data
+        run: cp -r ./data/* ./public/
 
       - name: Deploy to GitHub Pages (gh-pages)
         uses: peaceiris/actions-gh-pages@v3
