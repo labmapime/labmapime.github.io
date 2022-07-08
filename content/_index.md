@@ -29,22 +29,37 @@ A do [IME-USP](https://ime.usp.br/).
 Quando presencial, o atendimento é feito no próprio laboratório. Atendimento
 remoto é prestado através do e-mail [labmap@usp.br](mailto:labmap@usp.br).
 
-Horário de atendimento presencial:
+Atendimento presencial suspenso até 15/08/2022.
 
-- Terças-feiras, das 10:00 às 12:00.
-- Quartas-feiras, das 13:30 às 15:30.
+<!---Horário de atendimento presencial:
+
+<!--- - Terças-feiras, das 10:00 às 12:00.
+- Quartas-feiras, das 13:30 às 15:30. -->
 
 Coordenação: [Prof. Pedro Peixoto (MAP-IME-USP)](mailto:pedrosp@ime.usp.br)\
 Administração: [Luciano Rodrigues Saraiva Leão (IME-USP)](mailto:labmap@usp.br)
 
-{{< figure
-  src="/img/labmap-lab.jpg"
-  class="hp-img"
-  caption="Laboratório"
->}}
+<div class="center">
 
-{{< figure
-  src="/img/labmap-servnum.jpg"
-  class="hp-img"
-  caption="Servidores Numéricos"
->}}
+  {{< figure
+    src="/img/labmap-lab.jpg"
+    class="hp-img"
+    caption="Laboratório"
+  >}}
+
+  {{< figure
+    src="/img/labmap-servnum.jpg"
+    class="hp-img"
+    caption="Servidores Numéricos"
+  >}}
+
+</div>
+
+<div class="center">
+  {{< figure
+    src="img/labmap-cluster.jpg"
+    class="hp-img"
+    caption="Protótipo de Cluster"
+  >}}
+
+</div>

@@ -12,8 +12,17 @@ jobs:
       - name: Checkout files in the repository
         uses: actions/checkout@v3
         with:
+          submodules: recursive 
           fetch-depth: 0
           lfs: true
+
+      - name: Compile CSS from SCSS files
+        uses: gha-utilities/sass-build@v0.4.9
+        with:
+          source: |
+            ./themes/labmap/scss/src/style.scss
+          destination: |
+            ./data/css/style.css
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
