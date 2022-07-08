@@ -37,14 +37,27 @@ Horário de atendimento presencial:
 Coordenação: [Prof. Pedro Peixoto (MAP-IME-USP)](mailto:pedrosp@ime.usp.br)\
 Administração: [Luciano Rodrigues Saraiva Leão (IME-USP)](mailto:labmap@usp.br)
 
-{{< figure
-  src="/img/labmap-lab.jpg"
-  class="hp-img"
-  caption="Laboratório"
->}}
+<div class="center">
 
-{{< figure
-  src="/img/labmap-servnum.jpg"
-  class="hp-img"
-  caption="Servidores Numéricos"
->}}
+  {{< figure
+    src="/img/labmap-lab.jpg"
+    class="hp-img"
+    caption="Laboratório"
+  >}}
+
+  {{< figure
+    src="/img/labmap-servnum.jpg"
+    class="hp-img"
+    caption="Servidores Numéricos"
+  >}}
+
+</div>
+
+<div class="center">
+  {{< figure
+    src="img/labmap-cluster.jpg"
+    class="hp-img"
+    caption="Protótipo de Cluster"
+  >}}
+
+</div>

@@ -110,11 +110,19 @@ figure img {
 
 figure.hp-img {
   display: inline-block;
+  text-align: center;
+  align-content: center;
   margin: 1em 5%;
-  width: 40%;
+  width: auto;
   height: 12em;
   object-fit: contain;
 }
+
+.center {
+    position: center;
+    text-align: center;
+}
+
 
 img.centered {
   display: block;
