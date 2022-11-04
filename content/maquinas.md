@@ -6,15 +6,15 @@ draft: false
 stylesheets: [ "style" ]
 ---
 
-O LabMAP possui quatro máquinas locais e um servidor de acesso remoto:
+O LabMAP possui cinco máquinas locais:
 
 | Máquina       | Processador                 | Memória |   Disco |
 | ------------- | --------------------------- | ------: | ------: |
-| `jaguatirica` | Core 2 Quad 2.40 GHz        |   32 GB |  250 GB |
-| `palheiro`    | Ryzen 5 PRO 4650GE 3.30 GHz |   20 GB |  160 GB |
-| `maracaja`    | Ryzen 5 PRO 4650GE 3.30 GHz |   32 GB |  250 GB |
-| `mourisco`    | Core 2 Quad 2.40 GHz        |   32 GB |  160 GB |
-| `lebre`       | Core i7-2600 3.40 GHz       |   12 GB | 1.80 TB |
+| `jaguatirica` | Core i7-920 2.67 GHz        |    8 GB |  115 GB |
+| `palheiro`    | Ryzen 5 PRO 4650GE 3.30 GHz |   15 GB |  115 GB |
+| `maracaja`    | Ryzen 5 PRO 4650GE 3.30 GHz |   15 GB |  115 GB |
+| `mourisco`    | Core 2 Quad 2.33 GHz        |   16 GB |  115 GB |
+| `lebre`       | Core i7-2600 3.40 GHz       |    8 GB |  115 GB |
 
 Usuários ativos do laboratório podem acessar qualquer uma das máquinas acima
 pelo protocolo SSH através do comando `ssh maquina_desejada`, de dentro da [Rede
