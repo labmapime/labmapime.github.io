@@ -1,7 +1,8 @@
 CP_R    = cp -r
 MKDIR_P = mkdir -p
 
-SASSC = /home/specmap/labmap/.bin/sassc --style compressed
+#SASSC = /home/specmap/labmap/.bin/sassc --style compressed
+SASSC = /usr/bin/sassc --style compressed
 DESTDIR = ../static
 
 SHEETS	= css/style.css

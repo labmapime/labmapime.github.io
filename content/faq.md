@@ -57,3 +57,83 @@ ssh-copy-id cfd01
 {{</ highlight >}}
 
 [sshkey]: https://www.ssh.com/ssh/keygen/
+
+## Como posso deixar um programa rodando ininterruptamente?
+
+Se quiser rodar um programa sem precisar manter a sessão SSH aberta, 
+você pode usar o comando `nohup`:
+
+{{< highlight bash >}}
+nohup programa > saida.out &
+{{</ highlight >}}
+
+Dessa forma, o programa vai ser executado em plano de fundo e não será mais 
+interrompido ao sair da sessão SSH. Note que a saída será redirecionada
+para `saida.out` que poderá ser visualizada em tempo real com o comando:
+
+{{< highlight bash >}}
+tail -f -n1 saida.out
+{{</ highlight >}}
+
+Também é possível usar o comando [`screen`][screen] como alternativa ao `nohup`. Para isso, 
+basta criar uma [sessão][sessão] do `screen`, rodar seu programa e colocar a sessão em plano de
+fundo com `Ctrl+a d`. Para recuperar a sessão, rode o `screen` com a flag `-x` ou `-r` junto com
+o nome da sessão.
+
+[screen]: https://wiki.archlinux.org/title/GNU_Screen#Usage 
+[sessão]: https://wiki.archlinux.org/title/GNU_Screen#Named_sessions
+
+### Mas como faço para encerrar a execução do programa?
+
+Há várias formas de fazer isso, a mais simples delas é usar o comando `killall`:
+
+{{< highlight bash >}}
+killall programa
+{{</ highlight >}}
+
+Que irá terminar com todas as execuções do programa no momento. Caso você queira 
+parar uma execução em específico, procure o `PID` do programa com:
+
+{{< highlight bash >}}
+ps -fC programa
+{{</ highlight >}}
+
+E passe o respectivo `PID` como argumento para o comando `kill`:
+
+{{< highlight bash >}}
+kill PID # se não funcionar tente kill -9 PID
+{{</ highlight >}}
+
+
+
+### Usei o `nohup` mas nada está sendo impresso no arquivo de saída!
+
+Provavelmente, a causa disso é que o programa não está descarregando o buffer de
+saída, tente rodar com o comando `stdbuf`:
+
+{{< highlight bash >}}
+stdbuf -o0 nohup programa > saida.out &
+{{</ highlight >}}
+
+### O que faço se já comecei executar o programa, mas preciso encerrar minha sessão?
+
+Primeiro, se o programa não estiver rodando em plano de fundo, pause-o com `ctrl-z`. 
+
+Depois, desvincule o programa da sessão a partir de seu `PID`:
+
+{{< highlight bash >}}
+ps -fC programa
+disown PID
+{{</ highlight >}}
+
+Se a saída padrão do programa já estiver redirecionada para um arquivo e o programa 
+estiver pausado, despause-o com `kill -CONT PID`.
+
+Caso a saída não esteja redirecionada, há duas opções:
+- Abrir uma sessão do `screen` e vincular o programa a ela com o comando `reptyr PID` 
+(não esqueça de colocar a sessão em plano de fundo com o comando `ctrl-a d`);
+- Redirecionar a saída do programa para um arquivo com o programa [`reredirect`][reredirect].
+
+Pronto! Agora você já pode sair da sua sessão sem mais problemas. 
+
+[reredirect]: https://github.com/jerome-pouiller/reredirect/

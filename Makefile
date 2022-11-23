@@ -1,10 +1,8 @@
 CP_RU = cp -ru
-
-HOMEDIR = /home/specmap/labmap
+HUGO = /usr/bin/hugo
 DESTDIR = $(HOMEDIR)/www.hugo
 THEMES = $(wildcard themes/*)
 THEMESCLEAN = $(addsuffix clean,$(THEMES))
-HUGO = $(HOMEDIR)/.bin/hugo
 
 .DEFAULT: site
 .PHONY: site deploy clean $(THEMES)
@@ -22,4 +20,6 @@ site: $(THEMES)
 	$(HUGO) --minify
 
 deploy: site
-	$(CP_RU) public/* $(DESTDIR)
+	$(CP_RU) themes/labmap/scss/build/css/style.css css/style.css
+	$(CP_RU) data/img public/
+# $(CP_RU) public/* $(DESTDIR)

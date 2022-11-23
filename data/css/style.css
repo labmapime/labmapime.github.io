@@ -1,1 +1,217 @@
-.chroma{color:#f8f8f2;background-color:#272822}.chroma .err{color:#960050;background-color:#1e0010}.chroma .lntd{vertical-align:top;padding:0;margin:0;border:0}.chroma .lntable{border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block}.chroma .hl{display:block;width:100%;background-color:#3e3d32}.chroma .lnt{margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f}.chroma .ln{margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f}.chroma .k{color:#66d9ef}.chroma .kc{color:#66d9ef}.chroma .kd{color:#66d9ef}.chroma .kn{color:#f92672}.chroma .kp{color:#66d9ef}.chroma .kr{color:#66d9ef}.chroma .kt{color:#66d9ef}.chroma .na{color:#a6e22e}.chroma .nc{color:#a6e22e}.chroma .no{color:#66d9ef}.chroma .nd{color:#a6e22e}.chroma .ne{color:#a6e22e}.chroma .nf{color:#a6e22e}.chroma .nx{color:#a6e22e}.chroma .nt{color:#f92672}.chroma .l{color:#ae81ff}.chroma .ld{color:#e6db74}.chroma .s{color:#e6db74}.chroma .sa{color:#e6db74}.chroma .sb{color:#e6db74}.chroma .sc{color:#e6db74}.chroma .dl{color:#e6db74}.chroma .sd{color:#e6db74}.chroma .s2{color:#e6db74}.chroma .se{color:#ae81ff}.chroma .sh{color:#e6db74}.chroma .si{color:#e6db74}.chroma .sx{color:#e6db74}.chroma .sr{color:#e6db74}.chroma .s1{color:#e6db74}.chroma .ss{color:#e6db74}.chroma .m{color:#ae81ff}.chroma .mb{color:#ae81ff}.chroma .mf{color:#ae81ff}.chroma .mh{color:#ae81ff}.chroma .mi{color:#ae81ff}.chroma .il{color:#ae81ff}.chroma .mo{color:#ae81ff}.chroma .o{color:#f92672}.chroma .ow{color:#f92672}.chroma .c{color:#75715e}.chroma .ch{color:#75715e}.chroma .cm{color:#75715e}.chroma .c1{color:#75715e}.chroma .cs{color:#75715e}.chroma .cp{color:#75715e}.chroma .cpf{color:#75715e}.chroma .gd{color:#f92672}.chroma .ge{font-style:italic}.chroma .gi{color:#a6e22e}.chroma .gs{font-weight:bold}.chroma .gu{color:#75715e}body{font-family:"Liberation Sans", Arial, sans-serif;line-height:1.75em;max-width:50em;margin:auto;padding:0;color:#fff;background:#4d545c}main{max-width:50em;margin:auto;padding:0 4%}a{text-decoration:underline}a,a:visited{color:#ccc}a:hover{color:#fff;text-decoration:none}li{margin:0.1em 0}h1{font-size:1.5em;margin:0.83em 0}h2{font-size:1.23em;margin:1em 0}h3{font-size:1em;margin:1.33em 0}h4{font-size:.83em;margin:1.67em 0}h5{font-size:.67em;margin:2.33em 0}h6{font-size:.51em;margin:2.33em 0}nav#site-nav a:visited,nav#site-nav a{color:#fff;text-decoration:none}nav#site-nav a:hover{color:#676e75;text-decoration:underline}nav#site-nav a.dummy{display:none}nav#site-nav{display:grid;grid-template-columns:repeat(5, auto);text-align:center;margin-bottom:1em;border-bottom:0.3em solid #888d93}nav#site-nav,footer{background-color:#1b232b;box-sizing:border-box;padding:1em 0}footer p{margin:0}footer{margin-top:1em;border-top:0.3em solid #888d93;padding:1em 4%}figure img{max-width:100%;max-height:100%}@media screen and (min-width: 50em){body{padding:5em 2%;max-width:70em}nav#site-nav a.dummy{display:initial}nav#site-nav{grid-template-columns:repeat(15, auto);padding:1em 2em;margin-bottom:4em;border:0.3em solid #888d93}main{padding:initial}footer{padding:1em 2em;margin-top:3em;border:0.3em solid #888d93}}figure.hp-img{display:inline-block;margin:1em 5%;width:40%;height:12em;object-fit:contain}img.centered{display:block;margin:0 auto}video.fit,img.fit{width:100%;box-sizing:border-box}img.bordered{border:2px solid #656565;margin:1em 0}img.centered.bordered{margin:1em auto}video.bordered{border:2px solid #656565}blockquote{color:#888;font-style:normal;margin:0;padding:0 40px;box-sizing:border-box;border-left:0.2em solid #c5c8c6}table,table *{font-size:inherit}table{width:100%;margin:0 auto;border-collapse:collapse}table,th,td{border:1px solid #c5c8c6}th,td{padding:0.2em 0.4em}th{text-align:center}@media screen and (min-width: 50em){table{width:90%}}code{font-family:"DejaVu Sans Mono", monospace;font-size:90%;font-style:normal;background:#444b52;color:#fff;padding:0.08em 0.4em;border-radius:0.3em}pre code{display:block;max-height:40em;padding:1em;overflow:scroll;line-height:1.35em;background:#272822;scrollbar-width:none}pre code::-webkit-scrollbar{display:none}pre{border-radius:0.7em}a code{color:#f92672}
+// Colorscheme.
+@import "scheme";
+@import "highlight";
+
+/* body(lewd). */
+
+body {
+  font-family: "Liberation Sans", Arial, sans-serif;
+  line-height: 1.75em;
+
+  max-width: 50em;
+  margin: auto;
+  padding: 0;
+
+  color: $fg-main-color;
+  background: $bg-main-color;
+}
+
+main {
+  max-width: 50em;
+  margin: auto;
+  padding: 0 4%;
+}
+
+/* Basic elements. */
+
+a             { text-decoration: underline; }
+a, a:visited  { color: $fg-anchor-normal-color; }
+a:hover       { color: $fg-anchor-hover-color; text-decoration: none; }
+
+li            { margin: 0.1em 0; }
+
+/* decrease HTML headers font size one step */
+
+h1 { font-size:  1.5em; margin: 0.83em 0;}
+h2 { font-size: 1.23em; margin:    1em 0;}
+h3 { font-size:    1em; margin: 1.33em 0;}
+h4 { font-size:  .83em; margin: 1.67em 0;}
+h5 { font-size:  .67em; margin: 2.33em 0;}
+h6 { font-size:  .51em; margin: 2.33em 0;}
+
+nav#site-nav a:visited,
+nav#site-nav a  {
+  color: $fg-footer-anchor-normal-color;
+  text-decoration: none;
+}
+nav#site-nav a:hover  {
+  color: $nav-hover-fg-color;
+  text-decoration: underline;
+}
+nav#site-nav a.dummy {
+  display: none;
+}
+
+nav#site-nav {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  text-align: center;
+  margin-bottom: 1em;
+  border-bottom: 0.3em solid $nav-border-color;
+}
+
+nav#site-nav,
+footer {
+  background-color: $nav-bg-color;
+  box-sizing: border-box;
+  padding: 1em 0;
+}
+
+footer p {
+  margin: 0;
+}
+footer {
+  margin-top: 1em;
+  border-top: 0.3em solid $nav-border-color;
+  padding: 1em 4%;
+}
+
+figure img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* in case we're on desktop... */
+
+@media screen and (min-width: 50em) {
+  body {
+    padding: 5em 2%;
+    max-width: 70em;
+  }
+  nav#site-nav a.dummy {
+    display: initial;
+  }
+  nav#site-nav {
+    grid-template-columns: repeat(15, auto);
+    padding: 1em 2em;
+    margin-bottom: 4em;
+    border: 0.3em solid $nav-border-color;
+  }
+  main { padding: initial; }
+  footer {
+    padding: 1em 2em;
+    margin-top: 3em;
+    border: 0.3em solid $nav-border-color;
+  }
+}
+
+
+/* Personalized elements. */
+
+figure.hp-img {
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+  margin: 1em 5%;
+  width: auto;
+  height: 12em;
+  object-fit: contain;
+}
+
+.center {
+    position: center;
+    text-align: center;
+}
+
+
+img.centered {
+  display: block;
+  margin: 0 auto;
+}
+
+video.fit, img.fit {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+img.bordered {
+  border: 2px solid $secondary-border-color;
+  margin: 1em 0;
+}
+
+img.centered.bordered {
+  margin: 1em auto;
+}
+
+video.bordered {
+  border: 2px solid $secondary-border-color;
+}
+
+/* blockquotes */
+blockquote {
+  color: $fg-quote-color;
+  font-style: normal;
+  margin: 0;
+  padding: 0 40px;
+  box-sizing: border-box;
+  border-left: .2em solid $border-color;
+}
+
+/* table style */
+
+/* in case legacy stuff is being bothersome */
+table, table * { font-size: inherit; }
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid $border-color;
+}
+
+th, td {
+  padding: 0.2em 0.4em;
+}
+
+th { text-align: center; }
+
+@media screen and (min-width: 50em) {
+  table { width: 90%; }
+}
+
+/* Usually code */
+
+code {
+  font-family: "DejaVu Sans Mono", monospace;
+  font-size: 90%;
+  font-style: normal;
+  background: $bg-codeinline-color;
+  color: $fg-codeinline-color;
+  padding: 0.08em 0.4em;
+  border-radius: 0.3em;
+}
+
+pre code {
+  display: block;
+  max-height: 40em;
+  padding: 1em;
+  overflow: scroll;
+  line-height: 1.35em;
+  background: $bg-codeblock-color;
+  scrollbar-width: none;
+}
+
+pre code::-webkit-scrollbar {
+  display: none;
+}
+
+pre {
+  border-radius: 0.7em;
+}
+
+a code {
+  color: $fg-codeblock-url-color;
+}
