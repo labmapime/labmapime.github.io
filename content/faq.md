@@ -6,7 +6,21 @@ draft: false
 stylesheets: ["style"]
 ---
 
-## Como posso alterar minha senha de usuário?
+<div class="toc">
+
+- [<b>Como posso alterar minha senha de usuário?</b>](#como-posso-alterar-minha-senha-de-usuário)
+- [<b>Como uso a impressora do laboratório?</b>](#como-uso-a-impressora-do-laboratório)
+- [<b>Como posso acessar os servidores do laboratório?</b>](#como-posso-acessar-os-servidores-do-laboratório)
+    - [<b>Tenho sempre que executar esses comandos manualmente?</b>](#tenho-sempre-que-executar-esses-comandos-manualmente)
+- [<b>Como posso deixar um programa rodando ininterruptamente?</b>](#como-posso-deixar-um-programa-rodando-ininterruptamente)
+    - [<b>Mas como faço para encerrar a execução do programa?</b>](#mas-como-faço-para-encerrar-a-execução-do-programa)
+    - [<b>Usei o `nohup` mas nada está sendo impresso no arquivo de saída!</b>](#usei-o-nohup-mas-nada-está-sendo-impresso-no-arquivo-de-saída)
+    - [<b>O que faço se já comecei executar o programa, mas preciso encerrar minha sessão?</b>](#o-que-faço-se-já-comecei-executar-o-programa-mas-preciso-encerrar-minha-sessão)
+
+</div>
+
+
+## Como posso alterar minha senha de usuário? 
 
 Para trocar sua senha, acesse sua conta através da rede local ou por SSH e
 use o comando `passwd` no terminal.
@@ -103,7 +117,6 @@ E passe o respectivo `PID` como argumento para o comando `kill`:
 {{< highlight bash >}}
 kill PID # se não funcionar tente kill -9 PID
 {{</ highlight >}}
-
 
 
 ### Usei o `nohup` mas nada está sendo impresso no arquivo de saída!

@@ -157,6 +157,20 @@ blockquote {
   border-left: .2em solid $border-color;
 }
 
+.toc {
+  background: $bg-codeblock-color none repeat scroll 0 0;
+  font-size: 100%;
+
+  list-style-type: none;
+  display: table;
+  display: block;
+  padding: 1px;
+  padding-right: 15px;
+  border: 1px solid $nav-hover-fg-color;
+
+
+}
+
 /* table style */
 
 /* in case legacy stuff is being bothersome */
