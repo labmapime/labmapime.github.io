@@ -8,14 +8,15 @@ stylesheets: ["style"]
 
 <div class="toc">
 
-- [<b>Como posso alterar minha senha de usuário?</b>](#como-posso-alterar-minha-senha-de-usuário)
-- [<b>Como uso a impressora do laboratório?</b>](#como-uso-a-impressora-do-laboratório)
-- [<b>Como posso acessar os servidores do laboratório?</b>](#como-posso-acessar-os-servidores-do-laboratório)
-    - [<b>Tenho sempre que executar esses comandos manualmente?</b>](#tenho-sempre-que-executar-esses-comandos-manualmente)
-- [<b>Como posso deixar um programa rodando ininterruptamente?</b>](#como-posso-deixar-um-programa-rodando-ininterruptamente)
-    - [<b>Mas como faço para encerrar a execução do programa?</b>](#mas-como-faço-para-encerrar-a-execução-do-programa)
-    - [<b>Usei o `nohup` mas nada está sendo impresso no arquivo de saída!</b>](#usei-o-nohup-mas-nada-está-sendo-impresso-no-arquivo-de-saída)
-    - [<b>O que faço se já comecei executar o programa, mas preciso encerrar minha sessão?</b>](#o-que-faço-se-já-comecei-executar-o-programa-mas-preciso-encerrar-minha-sessão)
+- [Como posso alterar minha senha de usuário?](#como-posso-alterar-minha-senha-de-usuário)
+- [Como uso a impressora do laboratório?](#como-uso-a-impressora-do-laboratório)
+- [Como posso acessar os servidores do laboratório?](#como-posso-acessar-os-servidores-do-laboratório)
+  - [Tenho sempre que executar esses comandos manualmente?](#tenho-sempre-que-executar-esses-comandos-manualmente)
+- [Como faço para transferir arquivos entre meu computador e uma máquina do laboratório?](#como-faço-para-transferir-arquivos-entre-meu-computador-e-uma-máquina-do-laboratório)
+- [Como posso deixar um programa rodando ininterruptamente?](#como-posso-deixar-um-programa-rodando-ininterruptamente)
+  - [Mas como faço para encerrar a execução do programa?](#mas-como-faço-para-encerrar-a-execução-do-programa)
+  - [Usei o `nohup` mas nada está sendo impresso no arquivo de saída!](#usei-o-nohup-mas-nada-está-sendo-impresso-no-arquivo-de-saída)
+  - [O que faço se já comecei executar o programa, mas preciso encerrar minha sessão?](#o-que-faço-se-já-comecei-executar-o-programa-mas-preciso-encerrar-minha-sessão)
 
 </div>
 
@@ -71,6 +72,34 @@ ssh-copy-id cfd01
 {{</ highlight >}}
 
 [sshkey]: https://www.ssh.com/ssh/keygen/
+
+## Como faço para transferir arquivos entre meu computador e uma máquina do laboratório?
+
+Para copiar um arquivo ou pasta localizado em `origem` na sua máquina
+para `destino` em outra máquina (e vice-versa),
+use o comando [`rsync`][rsync]:
+
+{{< highlight bash >}}
+rsync -Pr origem meuuserlab@maquina:destino
+{{</ highlight >}}
+
+ou
+
+{{< highlight bash >}}
+rsync -Pr meuuserlab@maquina:origem destino
+{{</ highlight >}}
+
+Adicione `-e "ssh -J meuuserime@ime.usp.br"` 
+como argumento para o `rsync` caso
+caso você não tenha seguido os passos de [Tenho sempre que executar esses comandos manualmente?](#tenho-sempre-que-executar-esses-comandos-manualmente)
+.
+
+Você também pode usar o comando
+[`scp`][scp]
+como alternativa ao `rsync`. 
+
+[rsync]: https://wiki.archlinux.org/title/Rsync#As_cp/mv_alternative
+[scp]: https://wiki.archlinux.org/title/SCP_and_SFTP#Secure_copy_protocol_(SCP)
 
 ## Como posso deixar um programa rodando ininterruptamente?
 
