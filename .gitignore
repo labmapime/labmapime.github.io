@@ -2,3 +2,4 @@
 public
 .vscode
 .vscode/*
+.hugo_build.lock

@@ -8,17 +8,18 @@ stylesheets: [ "style" ]
 
 O LabMAP possui cinco máquinas locais:
 
-| Máquina       | Processador                 | Memória |   Disco |
-| ------------- | --------------------------- | ------: | ------: |
-| `jaguatirica` | Core i7-920 2.67 GHz        |    8 GB |  115 GB |
-| `palheiro`    | Ryzen 5 PRO 4650GE 3.30 GHz |   15 GB |  115 GB |
-| `maracaja`    | Ryzen 5 PRO 4650GE 3.30 GHz |   15 GB |  115 GB |
-| `mourisco`    | Core 2 Quad 2.33 GHz        |   16 GB |  115 GB |
-| `lebre`       | Core i7-2600 3.40 GHz       |    8 GB |  115 GB |
+| Máquina       | Processador                 | Memória | Disco &nbsp;&nbsp;&nbsp; | /storage |
+| ------------- | --------------------------- | ------: | -----------------------: | -------: |
+| `macambira`   | Core i9-9900K 3.60GHz       |   32 GB |                 Rede IME |   800 GB |
+| `jaguatirica` | Core i7-920 2.67 GHz        |    8 GB |                 Rede IME |   800 GB |
+| `palheiro`    | Ryzen 5 PRO 4650GE 3.30 GHz |   15 GB |                 Rede IME |   800 GB |
+| `maracaja`    | Ryzen 5 PRO 4650GE 3.30 GHz |   15 GB |                 Rede IME |   800 GB |
+| `lebre`       | Core i7-2600 3.40 GHz       |    8 GB |                 Rede IME |     0 GB |
 
 Usuários ativos do laboratório podem acessar qualquer uma das máquinas acima
 pelo protocolo SSH através do comando `ssh maquina_desejada`, de dentro da [Rede
-IME][rime] (`ssh usuario@ime.usp.br`).
+IME][rime] (`ssh usuario@ime.usp.br`). Utilize o `/storage` ao invés
+da `/home`para armazenar arquivos de simulação ou instalar programas.
 
 Além das máquinas listadas acima, o LabMAP conta com três máquinas que pertencem
 à Rede IME e quatro servidores numéricos dedicados a pesquisa que requer
