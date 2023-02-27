@@ -29,15 +29,22 @@ A do [IME-USP](https://ime.usp.br/).
 Quando presencial, o atendimento é feito no próprio laboratório. Atendimento
 remoto é prestado através do e-mail [labmap@usp.br](mailto:labmap@usp.br).
 
-*No momento, o atendimento presencial está suspenso.*
+Horário de atendimento presencial:
 
-<!-- Horário de atendimento presencial:
-
-- Terças-feiras, das 10:00 às 12:00.
-- Quartas-feiras, das 13:30 às 15:30. -->
+<<<<<<< Updated upstream
+- Terças-feiras, das 15:00 às 17:00.
+<<<<<<< HEAD
+- Sextas-feiras, das 09:00 às 11:30. 
+=======
+- Quartas-feiras, das 14:00 às 16:00.
+- Quintas-feiras, das 15:00 às 17:00. 
+>>>>>>> Stashed changes
+=======
+- Quintas-feiras, das 15:00 às 17:00. 
+>>>>>>> 683b399 (maquinas: Adiciona informações sobre o cadastro nas máquinas locais do LabMAP)
 
 Coordenação: [Prof. Pedro Peixoto (MAP-IME-USP)](mailto:pedrosp@ime.usp.br)\
-Administração: [Luciano Rodrigues Saraiva Leão (IME-USP)](mailto:labmap@usp.br)
+Administração: [Miqueias Vitor Lopes Lima (IME-USP)](mailto:labmap@usp.br)
 
 <div class="center">
 
