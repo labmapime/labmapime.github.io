@@ -21,6 +21,10 @@ pelo protocolo SSH através do comando `ssh maquina_desejada`, de dentro da [Red
 IME][rime] (`ssh usuario@ime.usp.br`). Utilize o `/storage` ao invés
 da `/home`para armazenar arquivos de simulação ou instalar programas.
 
+Para o acesso por SSH a essas máquinas é necessário um cadastro específico.
+Se você já é usuário do LabMAP e não consegue se conectar a essas máquinas por SSH, isso pode
+significar que sua conta ainda não possui acesso. Nesse caso envie um e-mail para [labmap@usp.br](mailto:labmap@usp.br) relatando o seu problema. 
+
 Além das máquinas listadas acima, o LabMAP conta com três máquinas que pertencem
 à Rede IME e quatro servidores numéricos dedicados a pesquisa que requer
 processamento intensivo, como análise numérica, dinâmica dos fluidos, computação
