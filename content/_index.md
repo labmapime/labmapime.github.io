@@ -34,6 +34,7 @@ Horário de atendimento presencial:
 - Quartas-feiras, das 14:00 às 16:00
 - Quintas-feiras, das 15:00 às 17:00. 
 
+
 Coordenação: [Prof. Pedro Peixoto (MAP-IME-USP)](mailto:pedrosp@ime.usp.br)\
 Administração: [Miqueias Vitor Lopes Lima (IME-USP)](mailto:labmap@usp.br)
 
