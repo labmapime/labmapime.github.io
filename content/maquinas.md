@@ -25,6 +25,16 @@ Para o acesso por SSH a essas máquinas é necessário um cadastro específico.
 Se você já é usuário do LabMAP e não consegue se conectar a essas máquinas por SSH, isso pode
 significar que sua conta ainda não possui acesso. Nesse caso envie um e-mail para [labmap@usp.br](mailto:labmap@usp.br) relatando o seu problema. 
 
+Além disso, também há uma máquina com Windows 10 instalado, porém sem acesso
+por SSH: 
+
+| Máquina     | Processador                 | Memória |    Disco |
+| ----------- | --------------------------- | ------: | --------:|
+| `Windows`   | Core i7-3770 3.40 GHz       |    8 GB |   256 GB |
+
+Para usá-la presencialmente, solicite a criação de uma conta entrando em contato com 
+a administração do LabMAP.
+
 Além das máquinas listadas acima, o LabMAP conta com três máquinas que pertencem
 à Rede IME e quatro servidores numéricos dedicados a pesquisa que requer
 processamento intensivo, como análise numérica, dinâmica dos fluidos, computação
