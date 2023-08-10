@@ -31,7 +31,7 @@ remoto é prestado através do e-mail [labmap@usp.br](mailto:labmap@usp.br).
 
 Horário de atendimento presencial:
 
-- Quartas-feiras, das 14:00 às 16:00
+- Segundas-feiras, das 14:00 às 16:00
 - Quintas-feiras, das 15:00 às 17:00. 
 
 
