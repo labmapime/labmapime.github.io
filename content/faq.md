@@ -9,7 +9,6 @@ stylesheets: ["style"]
 <div class="toc">
 
 - [Como posso alterar minha senha de usuário?](#como-posso-alterar-minha-senha-de-usuário)
-- [Como uso a impressora do laboratório?](#como-uso-a-impressora-do-laboratório)
 - [Como posso acessar os servidores do laboratório?](#como-posso-acessar-os-servidores-do-laboratório)
   - [Tenho sempre que executar esses comandos manualmente?](#tenho-sempre-que-executar-esses-comandos-manualmente)
 - [Como faço para transferir arquivos entre meu computador e uma máquina do laboratório?](#como-faço-para-transferir-arquivos-entre-meu-computador-e-uma-máquina-do-laboratório)
@@ -29,11 +28,6 @@ use o comando `passwd` no terminal.
 O programa pedirá sua senha atual e que digite uma senha nova duas vezes. Se
 todos os campos forem preenchidos corretamente --- o programa avisará caso
 contrário ---, sua senha foi alterada.
-
-## Como uso a impressora do laboratório?
-
-Basta usar um programa que tenha impressão como uma de suas funcionalidades,
-escolhendo a impressora "Tártaro" na hora de imprimir.
 
 ## Como posso acessar os servidores do laboratório?
 

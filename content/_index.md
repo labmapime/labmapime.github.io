@@ -36,7 +36,7 @@ Horário de atendimento presencial:
 
 
 Coordenação: [Prof. Pedro Peixoto (MAP-IME-USP)](mailto:pedrosp@ime.usp.br)\
-Administração: [Miqueias Vitor Lopes Lima (IME-USP)](mailto:labmap@usp.br)
+Administração: [André de Lima (IME-USP)](mailto:labmap@usp.br)
 
 <div class="center">
 
