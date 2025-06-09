@@ -31,8 +31,9 @@ remoto é prestado através do e-mail [labmap@usp.br](mailto:labmap@usp.br).
 
 Horário de atendimento presencial:
 
-- Segundas-feiras, das 10:00 às 12:00
-- Quintas-feiras, das 13:00 às 15:00. 
+- Segundas-feiras, das 14:00 às 16:00
+- Sextas-feiras, das 10:00 às 12:00
+- O administrador também poderá estar presente fora desses horários
 
 
 Coordenação: [Prof. Pedro Peixoto (MAP-IME-USP)](mailto:pedrosp@ime.usp.br)\
