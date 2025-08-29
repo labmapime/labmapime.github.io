@@ -14,7 +14,7 @@ O LabMAP possui cinco máquinas locais:
 | `mumuninha`   | Core i7-7700 3.60GHz        |   16 GB |                 Rede IME |   800 GB |
 | `palheiro`    | Ryzen 5 PRO 4650GE 3.30 GHz |   15 GB |                 Rede IME |   800 GB |
 | `maracaja`    | Ryzen 5 PRO 4650GE 3.30 GHz |   15 GB |                 Rede IME |   800 GB |
-| `lagartixeiro`| Core i9       |    X GB |                 Rede IME |     X GB |
+| `lagartixeiro`| Core i9-10900k       |    30 GB |                 Rede IME |     930 GB |
 
 Usuários ativos do laboratório podem acessar qualquer uma das máquinas acima
 pelo protocolo SSH através do comando `ssh maquina_desejada`, de dentro da [Rede
