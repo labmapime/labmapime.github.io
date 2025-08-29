@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Laboratório de Matemática Aplicada on Laboratório de Matemática Aplicada - IME-USP</title><link>https://labmap.ime.usp.br/</link><description>Recent content in Laboratório de Matemática Aplicada on Laboratório de Matemática Aplicada - IME-USP</description><generator>Hugo</generator><language>pt-br</language><lastBuildDate>Fri, 20 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://labmap.ime.usp.br/index.xml" rel="self" type="application/rss+xml"/><item><title>Cadastro</title><link>https://labmap.ime.usp.br/cadastro/</link><pubDate>Fri, 20 May 2022 00:00:00 +0000</pubDate><guid>https://labmap.ime.usp.br/cadastro/</guid><description>&lt;p&gt;Para se tornar um usuário do Laboratório de Matemática Aplicada (LabMAP) basta
+enviar um email para &lt;a href="mailto:labmap@usp.br"&gt;labmap@usp.br&lt;/a&gt; com as informações solicitadas abaixo. Seu
+cadastro será avaliado pelo seu coordenador/supervisor e pelo coordenador do
+LabMAP antes de ser aprovado. Você receberá um e-mail quando seu pedido for
+aprovado, instruindo que entre em contato com a administração do laboratório
+para marcar um dia para cadastro de impressão digital na porta da sala.&lt;/p&gt;
+&lt;p&gt;Ressaltamos que para usar as máquinas do LabMAP é necessário ter uma conta na
+&lt;a href="https://si.ime.usp.br/"&gt;Rede IME&lt;/a&gt;.&lt;/p&gt;</description></item><item><title>Máquinas</title><link>https://labmap.ime.usp.br/maquinas/</link><pubDate>Wed, 18 May 2022 00:00:00 +0000</pubDate><guid>https://labmap.ime.usp.br/maquinas/</guid><description>&lt;p&gt;O LabMAP possui cinco máquinas locais:&lt;/p&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;Máquina&lt;/th&gt;
+ &lt;th&gt;Processador&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;Memória&lt;/th&gt;
+ &lt;th style="text-align: right"&gt;Disco    &lt;/th&gt;
+ &lt;th style="text-align: right"&gt;/storage&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;macambira&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Core i9-9900K 3.60GHz&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;32 GB&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;Rede IME&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;800 GB&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;mumuninha&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Core i7-7700 3.60GHz&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;16 GB&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;Rede IME&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;800 GB&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;palheiro&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Ryzen 5 PRO 4650GE 3.30 GHz&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;15 GB&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;Rede IME&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;800 GB&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;maracaja&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Ryzen 5 PRO 4650GE 3.30 GHz&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;15 GB&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;Rede IME&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;800 GB&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;code&gt;lagartixeiro&lt;/code&gt;&lt;/td&gt;
+ &lt;td&gt;Core i9-10900k 3.70 GHz&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;30 GB&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;Rede IME&lt;/td&gt;
+ &lt;td style="text-align: right"&gt;930 GB&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Usuários ativos do laboratório podem acessar qualquer uma das máquinas acima
+pelo protocolo SSH através do comando &lt;code&gt;ssh maquina_desejada&lt;/code&gt;, de dentro da &lt;a href="https://si.ime.usp.br/"&gt;Rede
+IME&lt;/a&gt; (&lt;code&gt;ssh usuario@ime.usp.br&lt;/code&gt;). Utilize o &lt;code&gt;/storage&lt;/code&gt; ao invés
+da &lt;code&gt;/home&lt;/code&gt;para armazenar arquivos de simulação ou instalar programas.&lt;/p&gt;</description></item><item><title>FAQ</title><link>https://labmap.ime.usp.br/faq/</link><pubDate>Wed, 06 May 2020 01:16:16 -0300</pubDate><guid>https://labmap.ime.usp.br/faq/</guid><description>&lt;div class="toc"&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#como-posso-alterar-minha-senha-de-usu%C3%A1rio"&gt;Como posso alterar minha senha de usuário?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#como-posso-acessar-os-servidores-do-laborat%C3%B3rio"&gt;Como posso acessar os servidores do laboratório?&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#tenho-sempre-que-executar-esses-comandos-manualmente"&gt;Tenho sempre que executar esses comandos manualmente?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href="#como-fa%C3%A7o-para-transferir-arquivos-entre-meu-computador-e-uma-m%C3%A1quina-do-laborat%C3%B3rio"&gt;Como faço para transferir arquivos entre meu computador e uma máquina do laboratório?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#como-posso-deixar-um-programa-rodando-ininterruptamente"&gt;Como posso deixar um programa rodando ininterruptamente?&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#mas-como-fa%C3%A7o-para-encerrar-a-execu%C3%A7%C3%A3o-do-programa"&gt;Mas como faço para encerrar a execução do programa?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#usei-o-nohup-mas-nada-est%C3%A1-sendo-impresso-no-arquivo-de-sa%C3%ADda"&gt;Usei o &lt;code&gt;nohup&lt;/code&gt; mas nada está sendo impresso no arquivo de saída!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#o-que-fa%C3%A7o-se-j%C3%A1-comecei-executar-o-programa-mas-preciso-encerrar-minha-sess%C3%A3o"&gt;O que faço se já comecei executar o programa, mas preciso encerrar minha sessão?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;h2 id="como-posso-alterar-minha-senha-de-usuário"&gt;Como posso alterar minha senha de usuário?&lt;/h2&gt;
+&lt;p&gt;Para trocar sua senha, acesse sua conta através da rede local ou por SSH e
+use o comando &lt;code&gt;passwd&lt;/code&gt; no terminal.&lt;/p&gt;</description></item></channel></rss>
