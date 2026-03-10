@@ -1,44 +1,39 @@
 ---
-title: "Redirecionando para Overleaf"
-layout: "redirect"
+
+title: "Overleaf LabMAP"
 url: "/overleaf"
-outputs:
-  - html
----
+----------------
 
-<div style="font-family: sans-serif; text-align: center; margin-top: 50px;">
-  <h2>Acedendo ao Overleaf LabMAP...</h2>
-  <p>Se você não for redirecionado em 3 segundos, <a id="manual-link" href="https://vistaless-regan-noncatalytically.ngrok-free.dev/login">clique aqui</a>.</p>
-</div>
+## Overleaf do LabMAP
 
-<script>
-  // A URL do seu túnel
-  const targetUrl = "https://vistaless-regan-noncatalytically.ngrok-free.dev/login";
+O LabMAP possui uma instância local do **Overleaf** em teste, utilizada para edição de documentos em **LaTeX**.
 
-  // Função para pular o aviso do ngrok
-  async function redirect() {
-    try {
-      // Faz uma chamada "silenciosa" com o header que o ngrok exige para pular o aviso
-      await fetch(targetUrl, {
-        method: "GET",
-        headers: {
-          "ngrok-skip-browser-warning": "true"
-        },
-        mode: 'no-cors' // Evita erros de política de domínio (CORS)
-      });
-      
-      // Após o fetch, o browser "lembra" da permissão e redirecionamos
-      window.location.href = targetUrl;
-    } catch (e) {
-      // Caso o fetch falhe, redireciona normalmente (o usuário verá o aviso do ngrok)
-      window.location.href = targetUrl;
-    }
-  }
 
-  // Executa a função ao carregar a página
-  redirect();
-</script>
+### 🔑 Criação de conta
 
-<noscript>
-  <meta http-equiv="refresh" content="0; url=https://vistaless-regan-noncatalytically.ngrok-free.dev/login">
-</noscript>
+Para utilizar o Overleaf do LabMAP é necessário solicitar a criação de uma conta.
+
+Envie um e-mail para **[labmap@usp.br](mailto:labmap@usp.br)** com as seguintes informações:
+
+* **Assunto:** `[Criação de conta overleaf]`
+* **Nome**
+* **Instituição / vínculo com o LabMAP**
+* **E-mail que será utilizado na conta**
+
+Após a criação da conta, você receberá instruções para definir sua senha e acessar a plataforma.
+
+### 🌐 Acesso ao sistema
+
+O Overleaf do LabMAP pode ser acessado pelo link abaixo:
+
+<p style="text-align:center; margin-top:20px;">
+  <a href="https://vistaless-regan-noncatalytically.ngrok-free.dev/login" 
+     style="background:#2c7be5; color:white; padding:12px 20px; text-decoration:none; border-radius:6px; font-weight:bold;">
+     Acessar Overleaf LabMAP
+  </a>
+</p>
+
+### ℹ️ Observações
+
+* o Overleaf ainda está em testes, por isso, recomendamos que salvem os arquivos localmente após o uso
+* Caso tenha problemas para acessar ou utilizar a plataforma, entre em contato pelo e-mail **[labmap@usp.br](mailto:labmap@usp.br)**.
