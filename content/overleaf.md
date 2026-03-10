@@ -33,6 +33,8 @@ O Overleaf do LabMAP pode ser acessado pelo link abaixo:
   </a>
 </p>
 
+e clique no botão *Visit site* 
+
 ### ℹ️ Observações
 
 * o Overleaf ainda está em testes, por isso, recomendamos que salvem os arquivos localmente após o uso
