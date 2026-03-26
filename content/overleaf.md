@@ -36,11 +36,6 @@ O Overleaf do LabMAP pode ser acessado pelo link abaixo:
 e clique no botão *Visit site* 
 
 ### 🌐 Acesso ao sistema de forma direta (Utilizar se a outra maneira de acesso  anterior estiver com problemas)
-Para acessar as máquinas disponibilizadas pelo laboratório, utilize o protocolo SSH.
-O acesso é feito por meio da Rede IME, portanto é necessário possuir previamente uma conta ativa nessa rede.
-
-Execute o seguinte comando no terminal:
-
 
 Para utilizar de forma direta, utilize o protocolo SSH.
 O acesso é feito por meio da *Rede IME* e pelo servidor *cfd01*, portanto é necessário possuir previamente uma conta ativa em ambos.
