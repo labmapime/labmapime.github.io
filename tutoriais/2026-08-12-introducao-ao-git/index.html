@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.9.0 -->
+<title>Laboratório de Matemática Aplicada</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="Laboratório de Matemática Aplicada" />
+<meta property="og:locale" content="pt_br" />
+<link rel="canonical" href="https://labmap.ime.usp.br/site-labmap/tutoriais/2026-08-12-introducao-ao-git/" />
+<meta property="og:url" content="https://labmap.ime.usp.br/site-labmap/tutoriais/2026-08-12-introducao-ao-git/" />
+<meta property="og:site_name" content="Laboratório de Matemática Aplicada" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Laboratório de Matemática Aplicada" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","headline":"Laboratório de Matemática Aplicada","url":"https://labmap.ime.usp.br/site-labmap/tutoriais/2026-08-12-introducao-ao-git/"}</script>
+<!-- End Jekyll SEO tag -->
+<!-- Fonte do titulo -->
+  <link rel="preload" href="/site-labmap/assets/fonts/BlackHanSans-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Academicons -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- proprio -->
+  <link rel="stylesheet" href="/site-labmap/assets/main.css">
+  
+  <!-- MathJax -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- Icone do site -->
+  <link rel="icon" type="image/x-icon" href="/site-labmap/favicon.ico">
+  
+  <!-- Tags -->
+  <meta name="description" content="O Laboratório de Matemática Aplicada (LabMAP) é um espaço pensado para os alunos que pesquisam matemática aplicada, considerando principalmente alunos de mestrado, doutorado, e de iniciação científica, mas também aberto a colaboradores.">
+  <meta name="keywords" content="labmap, laboratório, ime, usp, matematica, aplicada">
+  <meta name="author" content="labmap">
+  <meta name="robots" content="index, follow">
+</head>
+<body class="lh-lg"><header class="container mt-4"><nav class="navbar navbar-expand-md">
+  <div class="container">
+    <a class="navbar-brand site-title" rel="author" href="/site-labmap/">
+      <div class="navbar-brand">
+        <span>LabMAP</span>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" id="botao_menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <a href="/site-labmap" class="nav-link page-link offcanvas-title" id="offcanvasNavbarLabel">
+          LabMAP
+        </a>
+        <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">X</button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3"><li class="nav-item">
+              <a href="/site-labmap/cadastro" class="nav-link page-link">
+                Cadastro
+              </a>
+            </li><li class="nav-item">
+              <a href="/site-labmap/maquinas" class="nav-link page-link">
+                Máquinas
+              </a>
+            </li><li class="nav-item">
+              <a href="/site-labmap/faq" class="nav-link page-link">
+                FAQ
+              </a>
+            </li><li class="nav-item">
+              <a href="/site-labmap/overleaf" class="nav-link page-link">
+                Overleaf
+              </a>
+            </li><li class="nav-item">
+              <a href="/site-labmap/tutoriais" class="nav-link page-link">
+                Tutoriais
+              </a>
+            </li></ul>
+      </div>
+    </div>
+  </div>
+  </nav>
+</header><main class="container mt-4" aria-label="Content">
+      <div class="caixa">
+    <a href="/site-labmap/tutoriais">
+        < Voltar para tutoriais
+    </a>
+
+    <h1>Primeiros passos para Git e GitHub</h1>
+    <div class="tutorial-infos">
+        <div class="tutorial-infos-data">12/08/2026</div>
+        <div class="tutorial-infos-autoria">por Yuri</div>
+    </div>
+    <br>
+    <p>Seja bem vindo à inicialização ao GitHub, aqui serão apresentados os primeiros passos, para que possa ser possível disponibilizar publicamente um código que foi feito na sua Iniciação Científica / Mestrado / Doutorado / Publicações.</p>
+
+<p>Para podermos darmos esses primeiros passos, será necessário que já tenha ao menos a conta criada, para isso, entre no site do <a href="https://github.com/?locale=pt-br">GitHub</a>. E clicar para crair conta, que pedirá um emial de referência, como o e-mail institucional não existirá para sempre caso saia um dia da universidade, recomendamos que crie com e-mail pessoal, ou caso queira mudar acesse o seguinte link (“aqui disponibilizar como mudar o email de entrada no GitHub Setting -&gt; email -&gt; add email -&gt; mudar esse novo email para principal”)</p>
+
+<p>Criada a conta podemos seguir. E para que possamos adicionar nosso projeto ao GitHub, teremos que criar um repositório para cada projeto que estamos envolvidos. Depois aprender como colocar esses arquivos nesses reposítórios, por fim, como baixar ou atualizar seu repositório local</p>
+
+<h2 id="como-criar-um-repositório">Como criar um repositório</h2>
+<p>Entre em sua conta , onde no canto superior esquerdi da tela aparecerá a seguinte extrutura:</p>
+
+<p><img src="./entrada_github.png" alt="" /></p>
+
+<p>Esse item que está marcado, será na figura acima, voceê terá uma visualização de todo o ser perfil e toda a sua atividade, mas vamos deixar essa descrição apra depois. Como queremos criar um repositório, clique no segundo item escrito Repositories(Repositórios).</p>
+
+<p>Nessa aba, podemos ter a visão geral de todos os repositórios que criamos, sendo que na parte superior dessa página, teremos a seguinte estrutura:</p>
+
+<p><img src="./aba_repositorio.png" alt="" /></p>
+
+<p>Com isso, para criarmos um novo repositório clicamos no botão verde, escrito New (Novo) onde abrirá uma página com as configurações gerais do repositório que queremos criar.</p>
+
+<ol>
+  <li><strong>Primeiro precisamos criar um nome</strong>: onde esse nome tem que ser relativamente simples, mas antes de simples tem que ser fácil de lembrar para ser facilmente pesquisados pelos seus pares.</li>
+  <li><strong>Escrever uma descrição</strong>: Essa parte não é tão importante, para a criação em si do repositório, então podemos pular essa parte por enquanto.</li>
+  <li>
+    <p><strong>Escolher a visibilidade do projeto</strong>: Temos para essa parte duas opções, Public(pública) e Private (privado).</p>
+
+    <ol>
+      <li>
+        <p><strong>Public</strong>: Todas as pessoas que estão no GitHub poderão acessar esses códigos/arquivos.</p>
+      </li>
+      <li>
+        <p><strong>Private</strong>: Somente você poderá acessar esse repositório.</p>
+      </li>
+    </ol>
+  </li>
+  <li>
+    <p><strong>Adicionar um README</strong>: deixar essa opção como “on”. Essa opção permite que você crie um texto introdutório para o que será lido, de forma a deixar mais ditático.</p>
+  </li>
+  <li><strong>Adicionar uma licença</strong>: Essa licença permitirá que seus direitos autorais sejam protegidos, geralmente a licença MIT funciona bem, mas em caso de dúvidas só pesquisar no google qual licença se encaixa melhor, com suas necessidades.</li>
+</ol>
+
+<h2 id="acessar-e-alterar-o-repositório">Acessar e alterar o repositório</h2>
+<p>Teremos nessa parte duas possibilidades que trabalharemos separadamente, caso só tenhamos o repositório vazio e não tivermos uma pasta em contrapartida no nosso computador;  o outro caso é caso já tenhamos um repositório local e queremos subir ele para nosso repositório recem criado.</p>
+
+<h3 id="primeiro-caso">Primeiro caso</h3>
+<p>Dentro desse primeiro caso, temos um problema mais simples pois temos que fazer somente uma clonagem do nosso repositório recem-criado, para nossa máquina. Para isso teremos que entrar no terminal(Linux: <strong>Ctrl+Alt+T</strong> / Windows: <strong>Win+R</strong> depois <strong>Enter</strong>). E abrirá a seguinte página:</p>
+
+<p><img src="./terminal.png" alt="" /></p>
+
+<p>No terminal iremos para a pasta que queremos clonar, geralmente, inicialmente pode ser feita na área de trabalho do computados. Para isso, ao entrar no terminal digite:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd Área\ de\ trabalho/
+</code></pre></div></div>
+
+<p>E para sair dessa pasta basta digitar:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ..
+</code></pre></div></div>
+
+<p>Estando na pasta que desejamos, podemos clonar o repositório do GitHub que desejamos, para isso digite</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone [url do repositório desejado]
+</code></pre></div></div>
+
+<p><strong>Dica</strong>: para copiar e colar dentro do terminal, pelo menos para sistemas Linux podemos usar o atalho (<strong>Ctrl+shift+C</strong> para copiar e <strong>Ctrl+shift+V</strong> para colar).</p>
+
+<p>Apertando <strong>Enter</strong> teremos, iniciará a clonagem do repositório.</p>
+
+<p>Finalizada a clonagem, parabéns se divirta fazendo os códigos dentro dessa pasta, se possível da forma mais organizada possível.</p>
+
+<h3 id="segundo-caso">Segundo caso</h3>
+<p>Já para o segundo caso, temos uma leve diferença, pelo fato de não fazermos a clonagem do repositório com <code class="language-plaintext highlighter-rouge">git clone</code>, pela prévia existência de uma pasta com arquivos. Podemos fazer um <code class="language-plaintext highlighter-rouge">git clone</code> e copiar e colar os documentos que tinhamos na outra pasta. Mas, nessa seção fazermos outro caminho possível.</p>
+
+<p>Para isso, pelo terminal, entre na pasta em que se deseja fazer o commit dos arquivos desejados. E digite:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init
+git remote add origin [URL do repositório]
+</code></pre></div></div>
+
+<p>Um dúvida que pode surgir é, onde eu encontro essa <code class="language-plaintext highlighter-rouge">URL</code>? E ela pode ser obtida entrando no seu repositório e clicando no botão verde escrito Code&lt;&gt;, como mostrado na seguinte figura:</p>
+
+<p><img src="./url_repositorio.png" alt="" /></p>
+
+<p>Com isso ele gerará algumas possibilidades, para esse início clique em <code class="language-plaintext highlighter-rouge">HTML</code>, como mostrado na seguinte figura:</p>
+
+<p><img src="./copy_url.png" alt="" /></p>
+
+<p>Feito isso podemos seguir o processo de fazer os commit que virá a seguir.</p>
+
+<h2 id="como-fazer-o-primeiro-commit">Como fazer o primeiro commit</h2>
+
+<p>Feitas as primeiras alterações com as conecções com o GitHub já estabelecidas, podemos agora fazer nosso primeiro commit (que possui a ideia de atualizar o repositórios conforme for trabalhando nos seus projetos). Para isso, entre no terminal como descrito acima, dentro da pasta que foi clonada ou que já existia e você criou uma conexão entre seu computador e o repositório.</p>
+
+<p>Já dentro da pasta <strong>correta</strong>, pois caso faça na pasta errada dará erros, fique atento a essa parte.</p>
+
+<p>Digite no terminal</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+</code></pre></div></div>
+
+<p>Esse espaço entre o <em>add</em> e o ponto final é necessário. Agora, digite:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit -m "essa é uma mensagem para o commit"
+</code></pre></div></div>
+
+<p>Essa mensagem ficará ao lado de cada arquivo dentro de seu repositório. Ela serve para dar um indicativo do que cada parte faz. Por fim, digite:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push origin main
+</code></pre></div></div>
+
+<p>Essa estrutura evita erros, pois ela dá uma indicação de caminho para esse <em>push</em> que estamos fazendo.</p>
+
+<h2 id="como-fazer-a-primeira-sincronização">Como fazer a primeira sincronização</h2>
+
+<p>Uma das maiores vantagens do uso do GitHub é que podemos fazer alterações de diversos computadores. Caso o código que esteja trabalahando teve algumas modificações por você em outros computadores. Mas por algum motivo um dos seus repositório está desatualizado se comparado com o repositório original.</p>
+
+<p>Para que atualizar o código podemos digitar no terminal:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git pull origin main
+</code></pre></div></div>
+
+</div>
+    </main><footer class="footer h-card container mt-4 mb-4">
+    LabMAP: Laboratório de Matemática Aplicada
+</footer></body><!-- Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript -->
+<script src="/site-labmap/assets/main.js"></script></html>

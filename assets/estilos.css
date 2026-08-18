@@ -1,0 +1,292 @@
+@import "fontes.css";
+@import "tema.css";
+
+/************************************************
+> Variaveis e configs globais
+************************************************/
+* {
+    color: var(--texto-padrao-cor);
+    font-family: var(--texto-padrao-fonte);
+    /* margin: 0 !important; */
+}
+
+body {
+    line-height: 1.75em;
+    font-size: clamp(0.01rem, 0.025rem + 3vw, 1rem) !important;
+    background-color: var(--bg-main-color) !important;
+    color: var(--cor-texto-principal) !important;
+    padding: 0px;
+}
+
+/* Ancoras */
+a {
+    color: var(--fg-anchor-normal-color) !important;
+    text-decoration: underline;
+}
+a.btn {
+    color: white !important;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+a:visited {
+    color: var(--fg-anchor-normal-color) !important;
+}
+a:hover { 
+    color: var(--fg-anchor-hover-color);
+    text-decoration: none; 
+}
+
+/* Cabecalho e Rodape */
+header, footer {
+    background-color: var(--cor-secundaria);
+    border: 0.3em solid var(--nav-border-color);
+}
+footer {
+    padding: 15px 0px;
+}
+
+/* Titulos */
+h1 { font-size:  1.5em !important; margin: 0.83em 0 !important; }
+h2 { font-size: 1.23em !important; margin:    1em 0 !important; }
+h3 { font-size:    1em !important; margin: 1.33em 0 !important; }
+h4 { font-size:  .83em !important; margin: 1.67em 0 !important; }
+h5 { font-size:  .67em !important; margin: 2.33em 0 !important; }
+h6 { font-size:  .51em !important; margin: 2.33em 0 !important; }
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--texto-titulos-cor) !important;
+    font-weight: bold !important;
+}
+
+/* Estilo mural */
+.toc {
+  background: var(--bg-codeblock-color) none repeat scroll 0 0;
+  font-size: 100%;
+
+  list-style-type: none;
+  display: table;
+  display: block;
+  padding: 1px;
+  padding-top: 10px;
+  padding-right: 15px;
+  border: 1px solid var(--nav-hover-fg-color);
+}
+
+.center {
+    position: center;
+    text-align: center;
+}
+
+figure.figure {
+    text-align: center;
+}
+img.hp-img {
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+  width: auto;
+  height: 12em;
+  padding: 10px;
+  object-fit: contain;
+}
+figure.labmap-capa img {
+    width: 100%;
+    max-width: 400px;
+}
+
+/************************************************
+> Inicio de tabelas
+************************************************/
+
+table, table * { font-size: inherit !important; }
+
+table {
+    table-layout: fixed !important;
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid var(--border-color);
+}
+
+th, td {
+    padding: 0.2em 0.4em !important;
+    font-size: 80% !important;
+    text-align: center !important;
+}
+
+th { 
+    text-align: center;
+    background-color: var(--cor-secundaria) !important;
+}
+
+tr {
+    background-color: transparent !important;
+}
+
+@media screen and (min-width: 50em) {
+  table { width: 90% !important; }
+}
+
+/************************************************
+< Fim de tabelas
+************************************************/
+
+/************************************************
+> Inicio de codigos
+************************************************/
+
+/* Usually code */
+code {
+    font-family: "DejaVu Sans Mono", monospace;
+    font-size: 90% !important;
+    font-style: normal;
+    background: var(--bg-codeinline-color) !important;
+    color: var(--fg-codeinline-color) !important;
+    padding: 0.08em 0.4em;
+    border-radius: 0.3em;
+    border-color: transparent !important;
+}
+
+pre code {
+    font-size: 90% !important;
+    display: block;
+    max-height: 40em;
+    padding: 1em !important;
+    overflow: scroll;
+    line-height: 1.35em;
+    background: var(--bg-codeblock-color) !important;
+    scrollbar-width: none;
+}
+
+pre code::-webkit-scrollbar {
+  display: none;
+}
+
+pre {
+    border-radius: 0.7em;
+    padding: 0px !important;
+    font-size: 110% !important;
+}
+
+a code {
+  color: var(--fg-codeblock-url-color);
+}
+
+blockquote * {
+    font-size: 1rem !important;
+}
+
+/************************************************
+< Fim de codigos
+************************************************/
+
+/************************************************
+> Menu
+************************************************/
+.offcanvas {
+    background-color: var(--cor-secundaria) !important;
+}
+.offcanvas-header {
+    color: white;
+}
+.offcanvas button {
+    color: var(--cor-menu-contraido-header-texto) !important;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    font-family: Verdana;
+}
+.offcanvas-title {
+    font-size: 1.5rem !important;
+    color: white !important;
+}
+.offcanvas-title img {
+    height: 90px;
+}
+.offcanvas-body .navbar-nav {
+    margin-left: 0px;
+    gap: 10px;
+}
+.offcanvas-body .navbar-nav .nav-item {
+    font-size: medium;
+    padding: 5px;
+    margin: 0px;
+}
+.nav-item a {
+    color: white !important;
+}
+button.navbar-toggler {
+    filter: invert(100%);
+}
+nav.navbar-scrolled, nav.navbar-cor {
+    background-color: var(--cor-menu-fundo) !important;
+}
+nav.navbar-scrolled a, nav.navbar-cor a {
+    color: var(--fg-anchor-normal-color) !important;
+}
+nav.navbar-cor button.navbar-toggler {
+    filter: unset;
+}
+
+/************************************************
+< Fim de menu
+************************************************/
+
+.caixa {
+    border: 1px solid var(--secondary-border-color);
+    background-color: var(--cor-secundaria);
+    padding: 10px 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+/************************************************
+< Fim de coisas
+************************************************/
+
+/************************************************
+> Inicio de tutoriais
+************************************************/
+
+.tutorial-infos {
+}
+
+.tutorial-infos-data {
+    color: #ccc;
+    line-height: normal;
+}
+
+.tutorial-infos-autoria {
+    line-height: normal;
+}
+
+.tutoriais-lista {
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.tutoriais-item div {
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    transition: .2s;
+}
+.tutoriais-item:hover div {
+    text-decoration: underline;
+}
+.tutoriais-item:hover {
+    text-decoration: none;
+}
+.tutorial-autoria {
+    font-style: italic;
+    font-size: 90%;
+}
+
+/************************************************
+< Fim de tutoriais
+************************************************/
