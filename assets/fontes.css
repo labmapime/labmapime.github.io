@@ -1,0 +1,30 @@
+/************************************************
+> Fontes
+************************************************/
+@font-face {
+    font-family: blackhansans; /* Nao tem ç, ã, etc */
+    src: url(./fonts/BlackHanSans-Regular.woff2) format('woff2'),
+         url(./fonts/BlackHanSans-Regular.woff) format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: anton;
+    src: url(./fonts/Anton-Regular.woff2) format('woff2'),
+         url(./fonts/Anton-Regular.woff) format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: archivoblack;
+    src: url(./fonts/ArchivoBlack-Regular.woff2) format('woff2'),
+         url(./fonts/ArchivoBlack-Regular.woff) format('woff');
+    font-display: swap;
+}
+@font-face {
+    font-family: ComicRelief;
+    src: url(./fonts/ComicRelief-Regular.woff2) format('woff2'),
+         url(./fonts/ComicRelief-Regular.woff) format('woff');
+    font-display: swap;
+}
+/************************************************
+< Fim de Fontes
+************************************************/
