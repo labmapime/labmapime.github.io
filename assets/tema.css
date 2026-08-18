@@ -1,0 +1,40 @@
+:root {
+    --cor-secundaria: #1b232b;
+    /* --cor-secundaria: #0a2b49; */
+    
+    /* Fontes */
+    --texto-padrao-cor: #eee;
+    --texto-titulos-cor: #fff;
+    
+    /* --texto-padrao-fonte: ComicRelief, Arial, sans-serif; */
+    /* --texto-padrao-fonte: Verdana, Geneva, Tahoma, sans-serif; */
+    --texto-padrao-fonte: "Liberation Sans", Arial, sans-serif;
+
+    --bg-main-color: #4d545c;
+    /* --bg-main-color: #fff; */
+    /* --bg-main-color: #b9b1db; */
+    /* --bg-main-color: #b1d1db; */
+
+    --fg-timestamp-color: #707880;
+    --fg-quote-color: #888888;
+
+    --fg-codeblock-color: var(--fg-main-color);
+    --bg-codeblock-color: #272822;
+    --fg-codeblock-url-color: #f92672;
+    --fg-codeinline-color: var(--fg-codeblock-color);
+    --bg-codeinline-color: #444b52;
+
+    --fg-anchor-normal-color: #8cb2d1;
+    --fg-anchor-hover-color: #bb8cd1;
+
+    --fg-footer-anchor-normal-color: var(--fg-main-color);
+    --fg-footer-anchor-hover-color: var(--fg-anchor-hover-color);
+
+    --nav-hover-fg-color: #676e75;
+    --nav-border-color: #888d93;
+    --nav-bg-color: #1b232b;
+
+    --border-color: #c5c8c6;
+    --secondary-border-color: #656565;
+
+}
