@@ -1,5 +1,2 @@
-./public/*
-public
-.vscode
-.vscode/*
-.hugo_build.lock
+.jekyll-cache
+_site

@@ -1,0 +1,36 @@
+<header class="container mt-4">
+  {%- assign default_paths = site.pages | map: "path" -%}
+  {%- assign page_paths = site.header_pages | default: default_paths -%}
+  <nav class="navbar navbar-expand-md">
+  <div class="container">
+    <a class="navbar-brand site-title" rel="author" href="{{ "/" | relative_url }}">
+      <div class="navbar-brand">
+        <span>LabMAP</span>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" id="botao_menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <a href="{{ site.baseurl }}" class="nav-link page-link offcanvas-title" id="offcanvasNavbarLabel">
+          LabMAP
+        </a>
+        <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">X</button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          {%- for item in site.data.menu -%}
+            <li class="nav-item">
+              <a href="{{ item.url | relative_url }}" class="nav-link page-link">
+                {{ item.titulo | escape }}
+              </a>
+            </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+  </div>
+  </nav>
+</header>

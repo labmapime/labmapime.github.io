@@ -2,79 +2,86 @@
 
 Bem-vindo ao repositório do site do Laboratório de Matemática Aplicada (LabMAP).
 
-Este repositório contém o código-fonte e o conteúdo do site, que foi migrado do WordPress para o **Hugo** (um gerador de páginas estáticas) visando tornar o site mais seguro, rápido e simples de manter.
+Este repositório contém o código-fonte e o conteúdo do site, que foi migrado do Wordpress para o Hugo e agora para o Jekyll, visando tornar o site mais simples de manter.
 
 ## 🛠 Pré-requisitos
 
-Para administrar e contribuir com o site, é necessário ter conhecimento básico de:
-* **SSH**: Para acessar o repositório nos servidores da Rede IME (e possuir uma conta no grupo `labmap`).
-* **GNU/Linux**: Para lidar com eventuais conflitos de permissões nos diretórios usados no "código-fonte".
-* **Git**: Para controle de versão e automação da geração e deploy das páginas.
-* **HTML/CSS (Opcional)**: Apenas se desejar alterar a estrutura visual das páginas.
+Para administrar e contribuir cm o site, é necessário ter conhecimento básico de:
+
+- **SSH:** Para acessar o repositório nos servidores da Rede IME (e possuir uma conta no grupo `labmap`);
+- **GNU/Linux:** Para lidar com eventuais conflitos de permissões nos diretórios usados no "código-fonte".
+- **Git:** Para controle de versão e automação de geração e deploy das páginas.
+- **HTML/CSS (Opcional):** Apenas se desejar alterar a estrutura visual das páginas.
 
 ## 🚀 Começando
 
-O repositório do site está hospedado em `github.com/labmapime/labmapime.github.io`.
+(informações sobre login, hospedagem e git clone)
 
-Para acessar o GitHub, faça o login com o e-mail do laboratório (`labmap@ime.usp.br`). É **fortemente recomendável** adicionar a sua chave pública de SSH ao GitHub do laboratório para realizar as modificações no repositório diretamente pela linha de comando, evitando ficar preso no 2FA ao acessar de fora da USP.
+Você pode rodar o site localmente instalando o [Jekyll](https://jekyllrb.com/) em sua máquina. Para isso, é preciso ter o [Ruby](https://www.ruby-lang.org/pt/). Uma sugestão é fazer tudo isso de dentro de um ambiente [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
-### Clonando o Repositório
+1. Instale o Ruby, o compilador de C e C++ `c-compiler` e `cxx-compiler` e o `make`:
 
-Via HTTPS:
 ```bash
-git clone https://github.com/labmapime/labmapime.github.io.git
+conda install -c conda-forge ruby c-compiler cxx-compiler make
 ```
 
-Via SSH (Recomendado):
+2. Estando dentro do diretório do site, rode
+
 ```bash
-git clone git@github.com:labmapime/labmapime.github.io
+bundle install
 ```
 
-> **Nota sobre o Deploy:** O site é atualizado automaticamente alguns minutos após você enviar suas alterações (`git push`) para o repositório.
+3. Para rodar um servidor local com o site, basta usar:
+
+```bash
+bundle exec jekyll serve
+```
 
 ## 📝 Gerenciando o Conteúdo
 
-O conteúdo escrito do site (os textos e páginas) fica no diretório `content/` (exemplos atuais: `_index.md`, `cadastro.md`, `faq.md`, e `maquinas.md`).
+O conteúdo escrito do site (os textos e páginas) fica nos arquivos `index.html` e no diretório `paginas/`, além dos tutoriais que ficam em `tutoriais/`.
 
-### Criando e Editando Páginas
+### Criando e editando páginas
 
-Você pode utilizar a CLI do Hugo para criar uma página nova (se estiver instalado em sua máquina):
-```bash
-hugo new minhapagina.md
+Para criar uma página, basta copiar alguma existente e editá-la. 
+
+As páginas são escritas em **Markdown** ou **HTML** acompanhadas de um cabeçalho (Front-matter) para configuração. As páginas comuns precisam ter o seguinte cabeçalho:
+
 ```
-Ou, alternativamente, copiar uma página existente e editá-la.
-
-#### Estrutura da Página (Front-matter)
-As páginas utilizam a linguagem **Markdown** acompanhadas de um cabeçalho (Front-matter) para configuração. Um exemplo:
-
-```markdown
 ---
-title: "Minha primeira página pelo Hugo"
-slug: primeira-pagina
-date: 2020-10-05
-draft: false
-stylesheets: ["style"]
+layout: default
+titulo: "Título da página"
+data: 2026-08-16
+permalink: "/link-permanente"
 ---
-
-Minha primeira página pelo Hugo. Olha só que fácil foi. Isso aqui é tudo Markdown, inclusive tabelas.
 ```
 
-* O arquivo da página acima será gerado em `public/primeira-pagina/index.html` (acessível via `/primeira-pagina`) devido à diretiva `slug`.
-* O `draft: false` garante que a página não seja tratada como rascunho e seja gerada publicamente.
-* A diretiva `stylesheets` inclui automaticamente o CSS correspondente no `<header>` da página.
+- O `layout` corresponde ao arquivo-base sobre o qual o conteúdo desta página será escrito, dentre os disponíveis no diretório `_layouts`.
+- O `titulo` e a `data` são auto-descritivos;
+- O `permalink` é o link permanente do site, que não precisa corresponder ao nome do arquivo. Quando alguém acessar `https://labmap.ime.usp.br/link-permanente`, será mandado para esta página.
+
+### Tutoriais
+
+Já para os tutoriais o cabeçalho é um pouco maior. Por exemplo, o tutorial de git `tutoriais/2026-08-12-introducao-ao-git/index.md`:
+
+```
+---
+layout: post
+titulo: Primeiros passos para Git e GitHub
+resumo: Conceitos básicos de Git e uso do GitHub.
+categoria: Introdutórios
+data: 2026-08-12
+autoria: Yuri
+---
+```
+
+A `categoria` deve ser uma das que estão no arquivo `_data/tutoriais_categorias.yml`. Caso queira alguma que não está lá, só adicionar.
+
+A estrutura de arquivos aqui é importante. Crie uma pasta com a data seguida do titulo do tutorial, como o `2026-08-12-introducao-ao-git` e escreva o tutorial em um `index.md` dentro dessa pasta. A mídia vai dentro dessa mesma pasta.
 
 ## 🎨 Alterando o Layout e Estilo
 
 Se for necessário mudar o visual e a estrutura do site:
-* **Layouts (HTML)**: Estão em `themes/labmap/`. Os arquivos que controlam a estrutura são `_default/single.html` e os componentes no diretório `partials`. A página inicial (Home) fica em `layouts/index.html`.
-* **Estilos (SCSS)**: O estilo foi escrito em SCSS e está localizado em `themes/labmap/scss/`.
-* **CSS Inline**: Para ajudar na renderização em conexões lentas, um CSS base e mínimo é incorporado diretamente no HTML através do arquivo `layouts/partials/mincss.html`.
 
-## 📜 Histórico e Padrão de Commits
-
-Lembre-se de verificar o `git log` antes de começar a codar para manter o mesmo estilo de commits que tem sido usado desde o começo do repositório (historicamente, costuma ser escrito em inglês). 
-
-Faça suas alterações, crie o commit e faça o `git push`. O script de deploy cuidará do resto e o avisará se houver erros na geração!
-
----
-*PS: A documentação original em PDF foi gerada com o Pandoc através do comando `pandoc website.md -o website.pdf`.*
+- **Layouts (HTML):** Estão em `_layouts/`.
+- **Estilos e funcionalidades (CSS e JS):** Estão em `assets`.

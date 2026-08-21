@@ -1,0 +1,14 @@
+- titulo: Cadastro
+  url: "cadastro"
+
+- titulo: Máquinas
+  url: "maquinas"
+
+- titulo: FAQ
+  url: "faq"
+
+- titulo: Overleaf
+  url: "overleaf"
+
+- titulo: Tutoriais
+  url: "tutoriais"
