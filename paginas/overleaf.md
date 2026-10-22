@@ -54,7 +54,7 @@ Após a criação da conta, você receberá instruções para definir sua senha 
 
 <p style="text-align:center; margin-top:20px;">
 
-  <a href="https://vistaless-regan-noncatalytically.ngrok-free.dev/login" 
+  <a href="https://confidant-papaya-shrivel.ngrok-free.dev/" 
 
      class="btn"
 
@@ -64,7 +64,7 @@ Após a criação da conta, você receberá instruções para definir sua senha 
 
   </a>
 
-  <a href="https://hypnoses-stank-imitation.ngrok-free.dev/login" 
+  <a href="https://confidant-papaya-shrivel.ngrok-free.dev/" 
 
      class="btn"
 
